@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/css/main.css" th:href="@{main.css}">
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+    <link rel="stylesheet" href="../static/main.css" th:href="@{/main.css}">
     <title>Input</title>
 </head>
 <body>
 <h1>Input</h1>
+<h2>Enter your name</h2>
 <form action="Output.html" th:action="@{Output}">
     <p>
-        <label for="name">Name:</label>
-        <input id="name" th:name="Name">
+        <label for="n">Name:</label>
+        <input id="n" th:name="name">
     </p>
     <p>
-        <label for="status">Status:</label>
-        <input th:name="status" type="radio" value="Faculity">
+        <label>Status:
+        <input type="radio" th:faculty="faculty">Faculty
+        <input type="radio" th:staff="staff">Staff
+        </label>
     </p>
     <p>
         <input type="submit" value="Submit">
@@ -23,4 +26,5 @@
 </form>
 
 </body>
+<footer>Sheridan College/Loveya Gahir</footer>
 </html>

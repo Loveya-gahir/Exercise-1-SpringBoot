@@ -1,0 +1,15 @@
+h1{
+    font-family: "cursive";
+    color: navy;
+}
+h2{
+    color: chocolate;
+}
+label{
+    font-family: "monospace";
+    color: darkgreen;
+}
+footer{
+    font-style: italic;
+}
+
