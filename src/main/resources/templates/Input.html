@@ -6,6 +6,21 @@
     <title>Input</title>
 </head>
 <body>
+<h1>Input</h1>
+<form action="Output.html" th:action="@{Output}">
+    <p>
+        <label for="name">Name:</label>
+        <input id="name" th:name="Name">
+    </p>
+    <p>
+        <label for="status">Status:</label>
+        <input th:name="status" type="radio" value="Faculity">
+    </p>
+    <p>
+        <input type="submit" value="Submit">
+    </p>
+
+</form>
 
 </body>
 </html>
